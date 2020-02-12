@@ -1,0 +1,15 @@
+{
+    "plsql-language.connections": [
+        {
+            "ID": 3,
+            "active": true,
+            "database": "HR-DATABASE",
+            "hidden": false,
+            "password": "hr",
+            "privilege": "SYSDBA",
+            "username": "hr",
+            "name": "hr@HR-DATABASE"
+        }
+    ],
+    "plsql-language.connection.activeInfos": "hr/hr@HR-DATABASE"
+}
