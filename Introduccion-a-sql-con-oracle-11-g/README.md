@@ -117,6 +117,27 @@ SELECT column1, column2, ...
 FROM table_name
 WHERE columnN LIKE pattern; 
 ```
+### SQL LENGTH 
+
+La función length permite obtener el valor de la longitud de la cadena de caracteres de un campo en específico.
+
+```
+SELECT LENGTH(VALUE) FROM DUAL;
+
+SELECT * FROM tabla
+WHERE LENGTH(columna) <= 10; 
+```
+
+### SQL LOWER 
+
+La función lower permite poner en mínusculas el valor de la longitud de la cadena de caracteres de un campo en específico.
+
+```
+SELECT LENGTH(VALUE) FROM DUAL;
+
+SELECT * FROM tabla
+WHERE LENGTH(columna) <= 10; 
+```
 
 ## Operaciones
 

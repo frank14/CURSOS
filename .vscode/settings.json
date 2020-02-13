@@ -1,7 +1,7 @@
 {
     "plsql-language.connections": [
         {
-            "ID": 3,
+            "ID": 2,
             "active": true,
             "database": "HR-DATABASE",
             "hidden": false,
