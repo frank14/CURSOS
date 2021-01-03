@@ -1,2 +1,3 @@
-# SQL
-Ejercicios hechos sobre SQL
+# CURSOS REALIZADOS SOBRE DISTINTOS TEMAS
+
+1. SQL
