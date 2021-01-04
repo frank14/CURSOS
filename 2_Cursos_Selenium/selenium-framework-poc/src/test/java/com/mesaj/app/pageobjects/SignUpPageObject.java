@@ -6,39 +6,47 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SignUpPageObject {
 
-    private WebDriver driver;
+    final WebDriver driver;
 
     public SignUpPageObject(WebDriver driver) {
         this.driver = driver;
     }
 
-    private By firstNameTextbox = By.xpath("//input[@ng-model='FirstName']");
+    final By firstNameTextbox = By.xpath("//input[@ng-model='FirstName']");
 
-    private By lastName = By.xpath("//input[@ng-model='LastName']");
+    final By lastName = By.xpath("//input[@ng-model='LastName']");
 
-    private By address = By.xpath("//form[@id='basicBootstrapForm']/div[2]/div/textarea");
+    final By address = By.xpath("//form[@id='basicBootstrapForm']/div[2]/div/textarea");
 
-    private By emailAddress = By.xpath("//input[@type='email']");
+    final By emailAddress = By.xpath("//input[@type='email']");
 
-    private By phone = By.xpath("//input[@type='tel']");
+    final By phone = By.xpath("//input[@type='tel']");
 
-    private By genderMale = By.xpath("//input[@value='Male']");
+    final By genderMale = By.xpath("//input[@value='Male']");
 
-    private By genderFemale = By.xpath("//input[@value='Female']");
+    final By genderFemale = By.xpath("//input[@value='Female']");
 
-    private By country = By.id("countries");
+    final By hobbiesOne = By.xpath("//input[@value='Cricket']");
 
-    private By dateOfBrithYear = By.id("yearbox");
+    final By hobbiesTwo = By.xpath("//input[@value='Movies']");
 
-    private By dateOfBrithMonth = By.xpath("//select[@ng-model='monthbox']");
+    final By hobbiesThree = By.xpath("//input[@value='Hockey']");
 
-    private By dateOfBrithDay = By.id("daybox");
+    final By skill = By.id("Skills");
 
-    private By password = By.id("firstpassword");
+    final By country = By.id("countries");
 
-    private By confirmPassword = By.id("secondpassword");
+    final By dateOfBrithYear = By.id("yearbox");
 
-    private By submit = By.id("submitbtn");
+    final By dateOfBrithMonth = By.xpath("//select[@ng-model='monthbox']");
+
+    final By dateOfBrithDay = By.id("daybox");
+
+    final By password = By.id("firstpassword");
+
+    final By confirmPassword = By.id("secondpassword");
+
+    final By submit = By.id("submitbtn");
 
     public void go(String url) {
         this.driver.get(url);
@@ -70,6 +78,22 @@ public class SignUpPageObject {
 
     public void selectFemale(){
         this.driver.findElement(this.genderFemale).click();
+    }
+
+    public void selectHobbieOne(){
+        this.driver.findElement(this.hobbiesOne).click();
+    }
+
+    public void selectHobbieTwo(){
+        this.driver.findElement(this.hobbiesTwo).click();
+    }
+
+    public void selectHobbiethree(){
+        this.driver.findElement(this.hobbiesThree).click();
+    }
+
+    public void selectSkill(String skill){
+        new Select(this.driver.findElement(this.skill)).selectByValue(skill);
     }
 
     public void selectCountry(String country){

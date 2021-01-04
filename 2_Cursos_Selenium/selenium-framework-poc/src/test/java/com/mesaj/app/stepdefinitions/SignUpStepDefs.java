@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SignUpStepDefs {
 
     @Given("^Pepito wants to have an account$")
-    public void pepito_wants_to_have_an_account() throws InterruptedException {
+    public void pepito_wants_to_have_an_account() {
 
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/windows/chromedriver.exe");
 
@@ -24,19 +24,26 @@ public class SignUpStepDefs {
         signUpPageObject.writeLastName("Cabezas");
         signUpPageObject.writeAddress("Barrio nuevo bosque conjunto residencia nuevo bosque casa 9C");
         signUpPageObject.writeEmail(RandomEmailGenerator.get());
+        signUpPageObject.writePhone(RandomNumberGenerator.get());
         signUpPageObject.selectMale();
+        signUpPageObject.selectHobbieOne();
+        signUpPageObject.selectHobbiethree();
+        signUpPageObject.selectSkill("SQL");
         signUpPageObject.selectCountry("Colombia");
         signUpPageObject.selectBirthDay("14");
         signUpPageObject.selectBirthMonth("January");
         signUpPageObject.selectBirthYear("1994");
-        signUpPageObject.writePhone(RandomNumberGenerator.get());
         signUpPageObject.writePassword("P@ssw0rd");
         signUpPageObject.writeConfirmPassword("P@ssw0rd");
 
-        //signUpPageObject.clickOnSubmit();
+        signUpPageObject.clickOnSubmit();
 
-        //Thread.sleep(10000);
-        //driver.quit();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.quit();
 
     }
 
