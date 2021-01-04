@@ -16,6 +16,8 @@ public class SignUpPageObject {
 
     private By lastName = By.xpath("//input[@ng-model='LastName']");
 
+    private By address = By.xpath("//form[@id='basicBootstrapForm']/div[2]/div/textarea");
+
     private By emailAddress = By.xpath("//input[@type='email']");
 
     private By phone = By.xpath("//input[@type='tel']");
@@ -38,12 +40,20 @@ public class SignUpPageObject {
 
     private By submit = By.id("submitbtn");
 
+    public void go(String url) {
+        this.driver.get(url);
+    }
+
     public void writeFirstName(String firstname){
         this.driver.findElement(this.firstNameTextbox).sendKeys(firstname);
     }
 
     public void writeLastName(String lastName){
         this.driver.findElement(this.lastName).sendKeys(lastName);
+    }
+
+    public void writeAddress(String address){
+        this.driver.findElement(this.address).sendKeys(address);
     }
 
     public void writeEmail(String email){
