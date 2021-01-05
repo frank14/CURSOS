@@ -1,5 +1,6 @@
 com\mesaj\app\util\RandomNumberGenerator.class
 com\mesaj\app\util\RandomEmailGenerator.class
 com\mesaj\app\pageobjects\SignUpPageObject.class
+com\mesaj\app\pageobjects\SignUpServices.class
 com\mesaj\app\stepdefinitions\SignUpStepDefs.class
 CucumberTest.class

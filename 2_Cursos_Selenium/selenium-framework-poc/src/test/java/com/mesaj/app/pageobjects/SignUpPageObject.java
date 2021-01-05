@@ -1,127 +1,70 @@
 package com.mesaj.app.pageobjects;
 
-import org.openqa.selenium.By;
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+@Getter
 public class SignUpPageObject {
 
-    final WebDriver driver;
-
     public SignUpPageObject(WebDriver driver) {
-        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-    final By firstNameTextbox = By.xpath("//input[@ng-model='FirstName']");
+    @FindBy(xpath = "//input[@ng-model='FirstName']")
+    private WebElement firstNameTextbox;
 
-    final By lastName = By.xpath("//input[@ng-model='LastName']");
+    @FindBy(xpath = "//input[@ng-model='LastName']")
+    private WebElement lastName;
 
-    final By address = By.xpath("//form[@id='basicBootstrapForm']/div[2]/div/textarea");
+    @FindBy(xpath = "//form[@id='basicBootstrapForm']/div[2]/div/textarea")
+    private WebElement address;
 
-    final By emailAddress = By.xpath("//input[@type='email']");
+    @FindBy(xpath = "//input[@type='email']")
+    private WebElement emailAddress;
 
-    final By phone = By.xpath("//input[@type='tel']");
+    @FindBy(xpath = "//input[@type='tel']")
+    private WebElement phone;
 
-    final By genderMale = By.xpath("//input[@value='Male']");
+    @FindBy(xpath = "//input[@value='Male']")
+    private WebElement genderMale;
 
-    final By genderFemale = By.xpath("//input[@value='Female']");
+    @FindBy(xpath = "//input[@value='Female']")
+    private WebElement genderFemale;
 
-    final By hobbiesOne = By.xpath("//input[@value='Cricket']");
+    @FindBy(xpath = "//input[@value='Cricket']")
+    private WebElement hobbiesOne;
 
-    final By hobbiesTwo = By.xpath("//input[@value='Movies']");
+    @FindBy(xpath = "//input[@value='Movies']")
+    private WebElement hobbiesTwo;
 
-    final By hobbiesThree = By.xpath("//input[@value='Hockey']");
+    @FindBy(xpath = "//input[@value='Hockey']")
+    private WebElement hobbiesThree;
 
-    final By skill = By.id("Skills");
+    @FindBy(id = "Skills")
+    private WebElement skill;
 
-    final By country = By.id("countries");
+    @FindBy(id = "countries")
+    private WebElement country;
 
-    final By dateOfBrithYear = By.id("yearbox");
+    @FindBy(id = "yearbox")
+    private WebElement dateOfBrithYear;
 
-    final By dateOfBrithMonth = By.xpath("//select[@ng-model='monthbox']");
+    @FindBy(xpath = "//select[@ng-model='monthbox']")
+    private WebElement dateOfBrithMonth;
 
-    final By dateOfBrithDay = By.id("daybox");
+    @FindBy(id = "daybox")
+    private WebElement dateOfBrithDay;
 
-    final By password = By.id("firstpassword");
+    @FindBy(id = "firstpassword")
+    private WebElement password;
 
-    final By confirmPassword = By.id("secondpassword");
+    @FindBy(id = "secondpassword")
+    private WebElement confirmPassword;
 
-    final By submit = By.id("submitbtn");
-
-    public void go(String url) {
-        this.driver.get(url);
-    }
-
-    public void writeFirstName(String firstname){
-        this.driver.findElement(this.firstNameTextbox).sendKeys(firstname);
-    }
-
-    public void writeLastName(String lastName){
-        this.driver.findElement(this.lastName).sendKeys(lastName);
-    }
-
-    public void writeAddress(String address){
-        this.driver.findElement(this.address).sendKeys(address);
-    }
-
-    public void writeEmail(String email){
-        this.driver.findElement(this.emailAddress).sendKeys(email);
-    }
-
-    public void writePhone(String phone){
-        this.driver.findElement(this.phone).sendKeys(phone);
-    }
-
-    public void selectMale(){
-        this.driver.findElement(this.genderMale).click();
-    }
-
-    public void selectFemale(){
-        this.driver.findElement(this.genderFemale).click();
-    }
-
-    public void selectHobbieOne(){
-        this.driver.findElement(this.hobbiesOne).click();
-    }
-
-    public void selectHobbieTwo(){
-        this.driver.findElement(this.hobbiesTwo).click();
-    }
-
-    public void selectHobbiethree(){
-        this.driver.findElement(this.hobbiesThree).click();
-    }
-
-    public void selectSkill(String skill){
-        new Select(this.driver.findElement(this.skill)).selectByValue(skill);
-    }
-
-    public void selectCountry(String country){
-        new Select(this.driver.findElement(this.country)).selectByValue(country);
-    }
-
-    public void selectBirthDay(String day){
-        new Select(this.driver.findElement(this.dateOfBrithDay)).selectByValue(day);
-    }
-
-    public void selectBirthMonth(String month){
-        new Select(this.driver.findElement(this.dateOfBrithMonth)).selectByValue(month);
-    }
-
-    public void selectBirthYear(String year){
-        new Select(this.driver.findElement(this.dateOfBrithYear)).selectByValue(year);
-    }
-
-    public void writePassword(String password){
-        this.driver.findElement(this.password).sendKeys(password);
-    }
-
-    public void writeConfirmPassword(String password){
-        this.driver.findElement(this.confirmPassword).sendKeys(password);
-    }
-
-    public void clickOnSubmit(){
-        this.driver.findElement(submit).click();
-    }
+    @FindBy(id = "submitbtn")
+    private WebElement submit;
 
 }

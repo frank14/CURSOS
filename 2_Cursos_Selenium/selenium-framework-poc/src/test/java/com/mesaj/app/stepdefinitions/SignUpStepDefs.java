@@ -1,6 +1,7 @@
 package com.mesaj.app.stepdefinitions;
 
 import com.mesaj.app.pageobjects.SignUpPageObject;
+import com.mesaj.app.pageobjects.SignUpServices;
 import com.mesaj.app.util.RandomEmailGenerator;
 import com.mesaj.app.util.RandomNumberGenerator;
 import cucumber.api.java.en.Given;
@@ -18,7 +19,7 @@ public class SignUpStepDefs {
 
         WebDriver driver = new ChromeDriver();
 
-        SignUpPageObject signUpPageObject = new SignUpPageObject(driver);
+        SignUpServices signUpPageObject = new SignUpServices(driver);
         signUpPageObject.go("http://demo.automationtesting.in/Register.html");
         signUpPageObject.writeFirstName("Francisco");
         signUpPageObject.writeLastName("Cabezas");
