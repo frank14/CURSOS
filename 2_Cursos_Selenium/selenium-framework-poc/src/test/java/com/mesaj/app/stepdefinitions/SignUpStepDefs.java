@@ -1,6 +1,5 @@
 package com.mesaj.app.stepdefinitions;
 
-import com.mesaj.app.pageobjects.SignUpPageObject;
 import com.mesaj.app.pageobjects.SignUpServices;
 import com.mesaj.app.util.RandomEmailGenerator;
 import com.mesaj.app.util.RandomNumberGenerator;
@@ -13,37 +12,34 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SignUpStepDefs {
 
     @Given("^Pepito wants to have an account$")
-    public void pepito_wants_to_have_an_account() {
+    public void pepito_wants_to_have_an_account() throws InterruptedException{
 
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/windows/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
-        SignUpServices signUpPageObject = new SignUpServices(driver);
-        signUpPageObject.go("http://demo.automationtesting.in/Register.html");
-        signUpPageObject.writeFirstName("Francisco");
-        signUpPageObject.writeLastName("Cabezas");
-        signUpPageObject.writeAddress("Barrio nuevo bosque conjunto residencia nuevo bosque casa 9C");
-        signUpPageObject.writeEmail(RandomEmailGenerator.get());
-        signUpPageObject.writePhone(RandomNumberGenerator.get());
-        signUpPageObject.selectMale();
-        signUpPageObject.selectHobbieOne();
-        signUpPageObject.selectHobbiethree();
-        signUpPageObject.selectSkill("SQL");
-        signUpPageObject.selectCountry("Colombia");
-        signUpPageObject.selectBirthDay("14");
-        signUpPageObject.selectBirthMonth("January");
-        signUpPageObject.selectBirthYear("1994");
-        signUpPageObject.writePassword("P@ssw0rd");
-        signUpPageObject.writeConfirmPassword("P@ssw0rd");
+        SignUpServices signUp = new SignUpServices(driver);
+        signUp.go("http://demo.automationtesting.in/Register.html");
+        signUp.writeFirstName("Francisco");
+        signUp.writeLastName("Cabezas");
+        signUp.writeAddress("Barrio nuevo bosque conjunto residencia nuevo bosque casa 9C");
+        signUp.writeEmail(RandomEmailGenerator.get());
+        signUp.writePhone(RandomNumberGenerator.get());
+        signUp.selectMale();
+        signUp.selectHobbieOne();
+        signUp.selectHobbiethree();
+        signUp.selectSkill("SQL");
+        signUp.selectCountry("Colombia");
+        signUp.selectBirthDay("14");
+        signUp.selectBirthMonth("January");
+        signUp.selectBirthYear("1994");
+        signUp.writePassword("P@ssw0rd");
+        signUp.writeConfirmPassword("P@ssw0rd");
 
-        signUpPageObject.clickOnSubmit();
+        signUp.clickOnSubmit();
 
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Thread.sleep(10000);
+        
         driver.quit();
 
     }

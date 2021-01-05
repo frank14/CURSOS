@@ -5,9 +5,9 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SignUpServices {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    private SignUpPageObject signUpPageObject;
+    private final SignUpPageObject signUpPageObject;
 
     public SignUpServices(WebDriver driver) {
         this.driver = driver;
