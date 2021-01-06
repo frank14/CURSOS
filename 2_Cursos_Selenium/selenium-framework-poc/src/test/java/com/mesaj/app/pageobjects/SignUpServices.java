@@ -2,20 +2,16 @@ package com.mesaj.app.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
 public class SignUpServices {
-
-    @Autowired
-    private SignUpPageObject signUpPageObject;
 
     private final WebDriver driver;
 
-    @Autowired
+    private final SignUpPageObject signUpPageObject;
+
     public SignUpServices(WebDriver driver) {
         this.driver = driver;
+        signUpPageObject = new SignUpPageObject(driver);
     }
 
     public void go(String url) {

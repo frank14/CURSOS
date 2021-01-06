@@ -1,24 +1,24 @@
 package com.mesaj.app.stepdefinitions;
 
+import com.mesaj.app.conf.DriverConfig;
 import com.mesaj.app.pageobjects.SignUpServices;
 import com.mesaj.app.util.RandomEmailGenerator;
 import com.mesaj.app.util.RandomNumberGenerator;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
 
+@ContextConfiguration(classes = {DriverConfig.class})
 public class SignUpStepDefs {
+
+    @Autowired
+    private SignUpServices signUp;
 
     @Given("^Pepito wants to have an account$")
     public void pepito_wants_to_have_an_account() throws InterruptedException{
 
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/windows/chromedriver.exe");
-
-        WebDriver driver = new ChromeDriver();
-
-        SignUpServices signUp = new SignUpServices(driver);
         signUp.go("http://demo.automationtesting.in/Register.html");
         signUp.writeFirstName("Francisco");
         signUp.writeLastName("Cabezas");
@@ -38,9 +38,7 @@ public class SignUpStepDefs {
 
         signUp.clickOnSubmit();
 
-        Thread.sleep(10000);
-        
-        driver.quit();
+        Thread.sleep(5000);
 
     }
 
