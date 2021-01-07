@@ -6,4 +6,5 @@ C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-po
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\SignUpPageObject.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\stepdefinitions\SignUpStepDefs.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\driver\DriverFactory.java
+C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\PageBase.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\RandomNumberGenerator.java

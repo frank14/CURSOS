@@ -6,5 +6,5 @@ public enum Browser {
     ie,
     safari,
     opera,
-    me
+    edge
 }

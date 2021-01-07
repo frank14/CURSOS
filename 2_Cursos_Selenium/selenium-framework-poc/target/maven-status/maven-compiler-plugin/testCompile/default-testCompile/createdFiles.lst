@@ -1,4 +1,5 @@
 com\mesaj\app\util\RandomNumberGenerator.class
+com\mesaj\app\pageobjects\PageBase.class
 com\mesaj\app\pageobjects\SignUpServices.class
 com\mesaj\app\enums\Browser.class
 com\mesaj\app\util\RandomEmailGenerator.class
