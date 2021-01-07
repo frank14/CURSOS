@@ -1,7 +1,9 @@
 com\mesaj\app\util\RandomNumberGenerator.class
+com\mesaj\app\pageobjects\SignUpServices.class
+com\mesaj\app\enums\Browser.class
 com\mesaj\app\util\RandomEmailGenerator.class
 com\mesaj\app\pageobjects\SignUpPageObject.class
+com\mesaj\app\util\driver\DriverFactory.class
 com\mesaj\app\conf\DriverConfig.class
-com\mesaj\app\pageobjects\SignUpServices.class
 com\mesaj\app\stepdefinitions\SignUpStepDefs.class
 CucumberTest.class
