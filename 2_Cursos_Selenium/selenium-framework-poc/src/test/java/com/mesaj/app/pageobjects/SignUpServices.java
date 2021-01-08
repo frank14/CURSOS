@@ -1,5 +1,7 @@
 package com.mesaj.app.pageobjects;
 
+import com.mesaj.app.enums.Gender;
+import com.mesaj.app.enums.Hobbie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -44,23 +46,23 @@ public class SignUpServices {
         this.signUpPageObject.getPhone().sendKeys(phone);
     }
 
-    public void selectMale() {
+    private void selectMale() {
         this.signUpPageObject.getGenderMale().click();
     }
 
-    public void selectFemale() {
+    private void selectFemale() {
         this.signUpPageObject.getGenderFemale().click();
     }
 
-    public void selectHobbieOne() {
+    private void selectHobbieOne() {
         this.signUpPageObject.getHobbiesOne().click();
     }
 
-    public void selectHobbieTwo() {
+    private void selectHobbieTwo() {
         this.signUpPageObject.getHobbiesTwo().click();
     }
 
-    public void selectHobbiethree() {
+    private void selectHobbieThree() {
         this.signUpPageObject.getHobbiesThree().click();
     }
 
@@ -94,6 +96,26 @@ public class SignUpServices {
 
     public void clickOnSubmit() {
         this.signUpPageObject.getSubmit().click();
+    }
+
+    public void selectGender(Gender gender) {
+        if (gender == Gender.female){
+            selectFemale();
+        } else {
+            selectMale();
+        }
+    }
+
+    public void selectHobbie(Hobbie hobbie) {
+        if (hobbie == Hobbie.hockey){
+            selectHobbieOne();
+        }
+        if (hobbie == Hobbie.movies){
+            selectHobbieTwo();
+        }
+        if (hobbie == Hobbie.cricket){
+            selectHobbieThree();
+        }
     }
 
 }
