@@ -9,4 +9,3 @@ Feature: Client sign up
     Given Pepito wants to have an account
     When He sends required information to get the account
     Then He should be told that the account was not created
-
