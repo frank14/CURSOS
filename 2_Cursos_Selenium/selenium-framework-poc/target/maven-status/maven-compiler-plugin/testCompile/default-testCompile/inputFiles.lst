@@ -6,6 +6,7 @@ C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-po
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\enums\Gender.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\SignUpPageObject.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\stepdefinitions\SignUpStepDefs.java
+C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\reporting\TakeScreenshotCondition.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\RandomNumberGenerator.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\enums\Browser.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\SignUpServices.java
