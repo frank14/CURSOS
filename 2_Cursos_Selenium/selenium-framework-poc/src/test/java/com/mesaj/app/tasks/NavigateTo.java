@@ -14,7 +14,7 @@ public class NavigateTo {
     @Value("${url}")
     private String url;
 
-    public void signUpPage(){
+    public void loginPage(){
         this.webDriver.get(url);
     }
 

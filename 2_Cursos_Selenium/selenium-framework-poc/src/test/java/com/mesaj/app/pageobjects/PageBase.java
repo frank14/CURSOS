@@ -13,6 +13,7 @@ public class PageBase {
     @Autowired
     public PageBase(WebDriver webDriver){
         this.webDriver = webDriver;
+        webDriver.manage().window().maximize();
         PageFactory.initElements(webDriver, this);
     }
 

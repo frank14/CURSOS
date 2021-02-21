@@ -14,7 +14,7 @@ import java.time.Duration;
 
 @Configuration
 @ComponentScan(basePackages = "com.mesaj.app")
-@PropertySource("classpath:/application-${environment:dev}.properties")
+@PropertySource("classpath:/application-${environment:qa}.properties")
 public class DriverConfig {
 
     @Value("${driver.type}")
