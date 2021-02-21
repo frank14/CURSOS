@@ -5,11 +5,11 @@ import com.mesaj.app.conf.DriverConfig;
 import com.mesaj.app.pageobjects.HomeServices;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserLogin;
-import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -48,13 +48,11 @@ public class LoginStepDefs {
 
     @Then("el sistema debe redireccionarlo a la ventana principal")
     public void el_sistema_debe_redireccionarlo_a_la_ventana_principal() {
-        assertThat(true).isEqualTo(true);
+        homeServices.clickOnProfileButton();
     }
-
 
     @And("el usuario cierra sesión")
     public void el_usuario_cierra_sesión() {
-        homeServices.clickOnProfileButton();
         homeServices.clickOnLogOutButton();
     }
 
