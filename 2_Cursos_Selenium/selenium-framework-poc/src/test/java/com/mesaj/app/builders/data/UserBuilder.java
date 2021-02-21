@@ -26,6 +26,11 @@ public class UserBuilder {
         return this;
     }
 
+    public UserBuilder changeUsername() {
+        user.setUsername("pacho");
+        return this;
+    }
+
     public User build() {
         return this.user;
     }
