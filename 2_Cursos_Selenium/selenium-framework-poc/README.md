@@ -2,6 +2,8 @@
 
 Este es un proyecto de automatización que sigue el patron de diseño de POM.
 
+---
+
 ### Herramientas
 
 * Cucumber (BDD)
@@ -11,6 +13,8 @@ Este es un proyecto de automatización que sigue el patron de diseño de POM.
 * Selenium WebDriver (Interacciones con la UI)
 * Lombok
 
+---
+
 ### Pre requisitos:
 
 1. Tener instalado el JDK 1.8
@@ -18,6 +22,8 @@ Este es un proyecto de automatización que sigue el patron de diseño de POM.
 3. Intellij Community Edition. Se recomienda la última versión
 4. Maven 3.6 o superior
 5. Plugin gherkin for java en Intellij
+
+---
 
 ## Estructura del proyecto
 
@@ -44,7 +50,9 @@ Este es un proyecto de automatización que sigue el patron de diseño de POM.
     * **drivers:** Carpeta donde se van a almacenar los diferentes driver de los navegadores utilizados para los diferentes sistemas operativos.
     * **features:** Contiene los features descritos para los escenarios de pruebas necesarios para la verificación del cumplimiento de la funcionalidad.
     * **properties:** Contiene las variables de entorno para ejecutar el proyecto en diferentes environments.
-    
+
+---
+
 ## Ejecutar el proyecto
 
 Para correr el proyecto existen las siguientes formas:
