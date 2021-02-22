@@ -5,7 +5,7 @@ Este es un proyecto de automatización que sigue el patron de diseño de POM.
 ### Herramientas
 
 * Cucumber (BDD)
-* JUnit (Assertions) - Libreria de pruebas unitarias
+* JUnit (Assertions) - Librería de pruebas unitarias
 * Java
 * IntelliJ (IDE)
 * Selenium WebDriver (Interacciones con la UI)
