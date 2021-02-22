@@ -9,7 +9,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -36,8 +35,8 @@ public class LoginStepDefs {
         navigate.loginPage();
     }
 
-    @When("el usuario envie su nombre de usuario y contraseña validos")
-    public void el_usuario_envie_su_nombre_de_usuario_y_contraseña_validos() {
+    @When("el usuario envie su nombre de usuario y password validos")
+    public void el_usuario_envie_su_nombre_de_usuario_y_password_validos() {
         login.withInfo(
                 UserBuilder
                         .anUser()
@@ -51,13 +50,13 @@ public class LoginStepDefs {
         homeServices.clickOnProfileButton();
     }
 
-    @And("el usuario cierra sesión")
-    public void el_usuario_cierra_sesión() {
+    @And("el usuario cierra sesion")
+    public void el_usuario_cierra_sesion() {
         homeServices.clickOnLogOutButton();
     }
 
-    @When("el usuario envie su nombre de usuario y contraseña incorrectos")
-    public void el_usuario_envie_su_nombre_de_usuario_y_contraseña_incorrectos() {
+    @When("el usuario envie su nombre de usuario y password incorrectos")
+    public void el_usuario_envie_su_nombre_de_usuario_y_password_incorrectos() {
         login.withInfo(
                 UserBuilder
                         .anUser()

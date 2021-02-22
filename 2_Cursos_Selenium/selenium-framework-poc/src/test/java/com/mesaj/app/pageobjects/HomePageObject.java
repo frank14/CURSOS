@@ -19,7 +19,7 @@ public class HomePageObject extends PageBase {
     @FindBy(xpath = "//div[@id='kt_quick_user_toggle']")
     private WebElement profileButton;
 
-    @FindBy(xpath = "//a[@class='btn btn-light-primary btn-bold' and contains(., 'Cerrar sesión')]")
+    @FindBy(xpath = "//a[@class='btn btn-light-primary btn-bold' and contains(., 'Cerrar sesi')]")
     private WebElement logOutButton;
 
 }
