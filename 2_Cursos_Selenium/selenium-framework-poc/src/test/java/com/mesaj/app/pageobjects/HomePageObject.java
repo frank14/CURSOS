@@ -1,5 +1,6 @@
 package com.mesaj.app.pageobjects;
 
+import com.mesaj.app.util.base.PageBase;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

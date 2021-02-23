@@ -1,5 +1,6 @@
-package com.mesaj.app.pageobjects;
+package com.mesaj.app.pageactions;
 
+import com.mesaj.app.pageobjects.LoginPageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -7,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class LoginServices {
+public class LoginActions {
 
     @Autowired
     private LoginPageObject loginPageObject;

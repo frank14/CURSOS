@@ -1,7 +1,7 @@
 package com.mesaj.app.tasks;
 
 import com.mesaj.app.models.User;
-import com.mesaj.app.pageobjects.LoginServices;
+import com.mesaj.app.pageactions.LoginActions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class UserLogin {
 
     @Autowired
-    private LoginServices signUp;
+    private LoginActions signUp;
 
     public void withInfo(User user){
         signUp.writeUserName(user.getUsername());

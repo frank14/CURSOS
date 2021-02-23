@@ -1,4 +1,4 @@
-package com.mesaj.app.pageobjects;
+package com.mesaj.app.util.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

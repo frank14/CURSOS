@@ -34,10 +34,8 @@ Este es un proyecto de automatización que sigue el patron de diseño de POM.
 * **enums:** Contiene los archivos con las constantes del sistema.
     * Browser: Contiene los nombres asignados a cada uno de los diferentes navegadores utilizados para las pruebas automatizadas.
 * **models:** Contiene los diferentes modelos utilizados en el sistema para agrupar el conjunto de datos asociados a una entidad.
-* **pageobjects:** Contiene los archivos de PageObject, Services y PageBase
-    * **PageObject:** Esta clase tiene la responsabilidad de manejar los WebElements, adicionalmente extiende de PageBase y posse inyección de código proveniente de WedDriver.
-    * **Services:** Esta clase se encarga de almacenar los métodos utilizados por los stepdefinitions y todo el tema relacionado con las esperas entre peticiones.
-    * **PageBase:** Esta clase se encarga de inicializar el page factory, almacena configuraciones que el usuario requiera para el Web driver como lo son las características de .manage()
+* **pageactions:** Contiene a las clases que se encargan de almacenar los métodos utilizados por los stepdefinitions y todo el tema relacionado con las esperas entre peticiones.
+* **pageobjects:** Contiene a las clases que tienen la responsabilidad de manejar los WebElements, adicionalmente extiende de PageBase y posse inyección de código proveniente de WedDriver.
 * **stepdefinitions:** Contiene el conjunto de pasos establecido en el archivo feature de cucumber para la ejecución y validaciones de los mismos.
 * **tasks:** Contiene todos los archivos relacionados con la navegación por url asignada por el usuario, así como también las acciones a realizar para obtener los parámetros asociados a una entidad.
 * **util:** Contiene las utilidades utilizadas por el sistema para el desarrollo de las actividades de automatización designadas.
@@ -45,6 +43,7 @@ Este es un proyecto de automatización que sigue el patron de diseño de POM.
     * **reporting:** Paquete con las diferentes configuraciones para las capturas de pantalla y sus diferentes condiciones.
         * **PhotographerHook:** Esta clase se encarga de tomar las diferentes capturas de pantalla por diferentes parámetros y validaciones correspondiente a los steps definidos dentro del archivo feature.
         * **TakeScreenshotCondition:** Este archivo contiene las constantes que se seleccionan en el archivo de variables de entorno para realizar las diferentes capturas de pantalla.
+    * **PageBase:** Esta clase se encarga de inicializar el page factory, almacena configuraciones que el usuario requiera para el Web driver como lo son las características de .manage()
 * **CucumberTest:** Clase principal donde se ejecutaran todos nuestros casos de pruebas y las respectivas configuraciones de nuestros features y los reportes correspondientes.
 * **resources:** Carpeta para almacenar los recursos indispensables para el correcto funcionamiento del proyecto.
     * **drivers:** Carpeta donde se van a almacenar los diferentes driver de los navegadores utilizados para los diferentes sistemas operativos.

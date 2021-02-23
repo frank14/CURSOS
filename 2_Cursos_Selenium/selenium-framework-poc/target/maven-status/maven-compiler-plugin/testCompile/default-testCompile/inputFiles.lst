@@ -4,13 +4,13 @@ C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-po
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\reporting\PhotographerHook.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\LoginPageObject.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\builders\data\UserBuilder.java
+C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageactions\LoginActions.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\reporting\TakeScreenshotCondition.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\HomePageObject.java
-C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\LoginServices.java
+C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\base\PageBase.java
+C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageactions\HomeActions.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\enums\Browser.java
-C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\HomeServices.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\models\User.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\conf\DriverConfig.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\util\driver\DriverFactory.java
-C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\pageobjects\PageBase.java
 C:\Users\ID_0017\Documents\GitHub\CURSOS\2_Cursos_Selenium\selenium-framework-poc\src\test\java\com\mesaj\app\tasks\NavigateTo.java

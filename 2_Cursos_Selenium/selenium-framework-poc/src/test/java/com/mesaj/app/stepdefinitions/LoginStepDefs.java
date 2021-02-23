@@ -2,7 +2,7 @@ package com.mesaj.app.stepdefinitions;
 
 import com.mesaj.app.builders.data.UserBuilder;
 import com.mesaj.app.conf.DriverConfig;
-import com.mesaj.app.pageobjects.HomeServices;
+import com.mesaj.app.pageactions.HomeActions;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserLogin;
 import io.cucumber.java.en.And;
@@ -22,7 +22,7 @@ public class LoginStepDefs {
     private UserLogin login;
 
     @Autowired
-    private HomeServices homeServices;
+    private HomeActions homeActions;
 
     @Autowired
     private NavigateTo navigate;
@@ -47,12 +47,12 @@ public class LoginStepDefs {
 
     @Then("el sistema debe redireccionarlo a la ventana principal")
     public void el_sistema_debe_redireccionarlo_a_la_ventana_principal() {
-        homeServices.clickOnProfileButton();
+        homeActions.clickOnProfileButton();
     }
 
     @And("el usuario cierra sesion")
     public void el_usuario_cierra_sesion() {
-        homeServices.clickOnLogOutButton();
+        homeActions.clickOnLogOutButton();
     }
 
     @When("el usuario envie su nombre de usuario y password incorrectos")
