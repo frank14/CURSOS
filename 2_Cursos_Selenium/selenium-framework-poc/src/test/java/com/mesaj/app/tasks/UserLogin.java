@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 public class UserLogin {
 
     @Autowired
-    private LoginActions signUp;
+    private LoginActions login;
 
     public void withInfo(User user){
-        signUp.writeUserName(user.getUsername());
-        signUp.writePassword(user.getPassword());
-        signUp.clickOnSubmit();
+        login.writeUserName(user.getUsername());
+        login.writePassword(user.getPassword());
+        login.clickOnSubmit();
     }
 
 }
