@@ -3,17 +3,18 @@ package com.mesaj.app.stepdefinitions;
 import com.mesaj.app.builders.data.UserBuilder;
 import com.mesaj.app.conf.DriverConfig;
 import com.mesaj.app.pageactions.HomeActions;
+import com.mesaj.app.pageactions.LoginActions;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserLogin;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @ContextConfiguration(classes = {DriverConfig.class})
 public class LoginStepDefs {
@@ -23,6 +24,9 @@ public class LoginStepDefs {
 
     @Autowired
     private HomeActions homeActions;
+
+    @Autowired
+    private LoginActions loginActions;
 
     @Autowired
     private NavigateTo navigate;
@@ -68,7 +72,7 @@ public class LoginStepDefs {
 
     @Then("el sistema debe mostrarle un mensaje de error")
     public void el_sistema_debe_mostrarle_un_mensaje_de_error() {
-        assertThat(true).isEqualTo(true);
+        loginActions.alertErrorMessage();
     }
 
 }
