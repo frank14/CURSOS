@@ -10,14 +10,14 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class PageBase {
 
-    protected WebDriver webDriver;
+    protected WebDriver driver;
 
     @Autowired
-    public PageBase(WebDriver webDriver){
-        this.webDriver = webDriver;
-        webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        PageFactory.initElements(webDriver, this);
+    public PageBase(WebDriver driver){
+        this.driver = driver;
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        PageFactory.initElements(driver, this);
     }
 
 }

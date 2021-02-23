@@ -15,7 +15,7 @@ import java.util.UUID;
 public class PhotographerHook {
 
     @Autowired
-    private WebDriver webDriver;
+    private WebDriver driver;
 
     @Value("${take.screenshot.condition:none}")
     private TakeScreenshotCondition takeScreenshotCondition;
@@ -39,13 +39,11 @@ public class PhotographerHook {
     }
 
     public void takeScreenShot(Scenario scenario) {
-
         try {
-            final byte[] screenshot = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.BYTES);
+            final byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot,"image/png", UUID.randomUUID().toString());
         } catch (WebDriverException wde) {
             System.out.println("There was an error taking the screenshot: " + wde.getMessage());
         }
-
     }
 }

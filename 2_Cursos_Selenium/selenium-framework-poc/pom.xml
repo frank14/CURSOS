@@ -14,9 +14,15 @@
         <cucumber.version>5.6.0</cucumber.version>
         <selenium.version>4.0.0-alpha-4</selenium.version>
         <spring.version>5.2.7.RELEASE</spring.version>
+        <lombok.version>1.18.12</lombok.version>
+        <assertj-core>3.15.0</assertj-core>
+        <reporting-plugin>4.0.39</reporting-plugin>
     </properties>
 
     <dependencies>
+
+        <!--CUCUMBER-->
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -29,22 +35,36 @@
             <version>${cucumber.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-spring</artifactId>
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>de.monochromata.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>${reporting-plugin}</version>
+        </dependency>
+
+        <!--SELENIUM-->
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!--LOMBOK-->
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--SPRING-->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -57,16 +77,14 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!--ASSERTJ-->
+
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.15.0</version>
+            <version>${assertj-core}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>de.monochromata.cucumber</groupId>
-            <artifactId>reporting-plugin</artifactId>
-            <version>4.0.39</version>
         </dependency>
     </dependencies>
 

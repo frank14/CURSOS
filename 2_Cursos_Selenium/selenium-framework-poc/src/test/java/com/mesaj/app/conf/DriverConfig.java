@@ -24,13 +24,13 @@ public class DriverConfig {
     private int webDriverWaitTimeOut;
 
     @Bean
-    public WebDriver webDriver() {
+    public WebDriver driver() {
         return DriverFactory.get(driverType);
     }
 
     @Bean
     public WebDriverWait waitFor() {
-        return new WebDriverWait(webDriver(), Duration.ofSeconds(webDriverWaitTimeOut));
+        return new WebDriverWait(driver(), Duration.ofSeconds(webDriverWaitTimeOut));
     }
 
 }

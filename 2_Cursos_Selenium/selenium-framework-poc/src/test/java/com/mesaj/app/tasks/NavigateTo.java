@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 public class NavigateTo {
 
     @Autowired
-    private WebDriver webDriver;
+    private WebDriver driver;
 
     @Value("${url}")
     private String url;
 
     public void loginPage(){
-        this.webDriver.get(url);
+        this.driver.get(url);
     }
 
 }
