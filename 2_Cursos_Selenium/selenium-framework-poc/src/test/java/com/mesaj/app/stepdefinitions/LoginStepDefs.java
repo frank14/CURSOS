@@ -37,8 +37,8 @@ public class LoginStepDefs {
         navigate.loginPage();
     }
 
-    @When("el usuario envie su nombre de usuario y password validos")
-    public void el_usuario_envie_su_nombre_de_usuario_y_password_validos() {
+    @When("el usuario envie su username y password validos")
+    public void el_usuario_envie_su_username_y_password_validos() {
         login.withInfo(
                 UserBuilder
                         .anUser()
@@ -57,8 +57,8 @@ public class LoginStepDefs {
         homeActions.clickOnLogOutButton();
     }
 
-    @When("el usuario envie su nombre de usuario y password incorrectos")
-    public void el_usuario_envie_su_nombre_de_usuario_y_password_incorrectos() {
+    @When("el usuario envie su username y password invalidos")
+    public void el_usuario_envie_su_username_y_password_invalidos() {
         login.withInfo(
                 UserBuilder
                         .anUser()

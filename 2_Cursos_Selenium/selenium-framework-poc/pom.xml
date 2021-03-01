@@ -16,7 +16,7 @@
         <spring.version>5.2.7.RELEASE</spring.version>
         <lombok.version>1.18.12</lombok.version>
         <assertj-core>3.15.0</assertj-core>
-        <reporting-plugin>4.0.39</reporting-plugin>
+        <reporting-plugin>4.0.42</reporting-plugin>
     </properties>
 
     <dependencies>
