@@ -39,6 +39,10 @@ public class LoginActions {
         this.loginPageObject.getSubmit().click();
     }
 
+    public void clickOnRegister() {
+        this.loginPageObject.getRegister().click();
+    }
+
     public void alertErrorMessage() {
         //Now the alert appears.
         try {

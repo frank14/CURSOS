@@ -26,4 +26,7 @@ public class LoginPageObject extends PageBase {
     @FindBy(xpath = "//button[@class='btn roboto-ligth buttons-login' and contains(., 'Entrar')]")
     private WebElement submit;
 
+    @FindBy(xpath = "//button[@class='btn roboto-ligth buttons-login' and contains(., 'Inscribirse')]")
+    private WebElement register;
+
 }
